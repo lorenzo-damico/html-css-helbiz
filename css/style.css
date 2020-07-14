@@ -11,7 +11,10 @@ a {
 .list-inline  li {
   display: inline-block;
 }
-
+.container-1024 {
+  max-width: 1024px;
+  margin: auto;
+}
 /* HEADER */
 
 /* header top */
@@ -101,3 +104,63 @@ a {
   font-weight: 400;
   margin: 16px 0 32px;
 }
+
+/* /HEADER */
+
+/* MAIN */
+
+/* Product-section */
+.product-section {
+  padding: 80px 0;
+}
+.helb-go, .helb-bike {
+  float: left;
+  width: 48%;
+  background-color: #FAFAFA;
+  padding: 80px 40px;
+  text-align: center;
+}
+.helb-bike {
+  margin-left: 4%;
+}
+.logo-product {
+  width: 192px;
+}
+.img-product {
+  height: 340px;
+}
+.product-section h3 {
+  font-weight: 400;
+  margin: 32px 0;
+}
+.product-section a {
+  display: block;
+}
+.text-blue {
+  color: #0070c8;
+}
+.text-20 {
+  font-size: 1.25rem;
+}
+/* /MAIN */
+
+/* RESPONSIVE TABLET 769 - 992 PIXEL */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .img-product {
+    width: 312px;
+    height: auto;
+  }
+}
+/* /RESPONSIVE TABLET 769 - 992 PIXEL */
+
+/* RESPONSIVE SMARTPHONE < 768 PIXEL */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .helb-go, .helb-bike {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* /RESPONSIVE SMARTPHONE < 768 PIXEL */
