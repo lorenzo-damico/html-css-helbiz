@@ -21,12 +21,16 @@ a {
 .text-20 {
   font-size: 1.25rem;
 }
+.text-48 {
+  font-size: 3rem;
+}
 .regular {
   font-weight: 400;
 }
 .m-top-50 {
   margin-top: 50px;
 }
+
 
 /* HEADER */
 
@@ -172,10 +176,34 @@ a {
 }
 
 /* Info-section */
+.text-white {
+  color: #fff;
+}
+.h-500 {
+  height: 500px;
+}
+.relative {
+  position: relative;
+}
 .info-section {
   margin-top: 200px;
 }
-
+.info-section .smart {
+  height: 500px;
+  background-image: url(../img/scooter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.info-section .write {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.info-section .write p {
+  margin: 32px 0;
+}
 /* /MAIN */
 
 /* RESPONSIVE TABLET 769 - 992 PIXEL */
@@ -187,6 +215,13 @@ a {
 
   .instruction-section .banner {
     background-position: 25%;
+  }
+
+  .info-section .write h2 {
+    font-size: 2.25rem;
+  }
+  .info-section .container {
+    max-width: 780px;
   }
 }
 /* /RESPONSIVE TABLET 769 - 992 PIXEL */
@@ -213,6 +248,14 @@ a {
 
   .instruction-section h2 {
     margin-top: 350px;
+  }
+  .info-section .write {
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .info-section .write h2 {
+    font-size: 2.25rem;
   }
 }
 /* /RESPONSIVE SMARTPHONE < 768 PIXEL */
