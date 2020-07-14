@@ -15,6 +15,18 @@ a {
   max-width: 1024px;
   margin: auto;
 }
+.text-center {
+  text-align: center;
+}
+.text-20 {
+  font-size: 1.25rem;
+}
+.regular {
+  font-weight: 400;
+}
+.m-top-50 {
+  margin-top: 50px;
+}
 /* HEADER */
 
 /* header top */
@@ -87,7 +99,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  text-align: center;
   color: #fff;
 }
 .logo-store {
@@ -118,7 +129,6 @@ a {
   width: 48%;
   background-color: #FAFAFA;
   padding: 80px 40px;
-  text-align: center;
 }
 .helb-bike {
   margin-left: 4%;
@@ -133,15 +143,34 @@ a {
   font-weight: 400;
   margin: 32px 0;
 }
-.product-section a {
-  display: block;
-}
 .text-blue {
   color: #0070c8;
 }
-.text-20 {
-  font-size: 1.25rem;
+
+/* Instruction-section */
+.instruction-section .banner {
+  height: 400px;
+  background-image: url(../img/index-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 192px;
 }
+.instruction-section img {
+  width: 256px;
+}
+.instruction-section h2 {
+  font-size: 2.25rem;
+  margin-top: 50px;
+}
+.instruction-section h3 {
+  margin-bottom: 10px;
+}
+
+.instruction-section [class*="col-"] {
+  padding: 10px;
+}
+
 /* /MAIN */
 
 /* RESPONSIVE TABLET 769 - 992 PIXEL */
@@ -149,6 +178,10 @@ a {
   .img-product {
     width: 312px;
     height: auto;
+  }
+
+  .instruction-section .banner {
+    background-position: 25%;
   }
 }
 /* /RESPONSIVE TABLET 769 - 992 PIXEL */
@@ -158,9 +191,23 @@ a {
   .hero h1 {
     font-size: 2rem;
   }
+
   .helb-go, .helb-bike {
     width: 100%;
     margin: 0;
+  }
+
+  .img-product {
+    width: 80%;
+    height: auto;
+  }
+
+  .instruction-section .banner{
+    background-position: 20%;
+  }
+
+  .instruction-section h2 {
+    margin-top: 350px;
   }
 }
 /* /RESPONSIVE SMARTPHONE < 768 PIXEL */
