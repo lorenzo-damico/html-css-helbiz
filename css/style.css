@@ -198,8 +198,9 @@ a {
 .info-section .write {
   position: absolute;
   top: 50%;
+  left: 50%;
   width: 100%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 .info-section .write p {
   margin: 32px 0;
@@ -251,8 +252,6 @@ a {
   }
   .info-section .write {
     width: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .info-section .write h2 {
     font-size: 2.25rem;
