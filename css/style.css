@@ -142,7 +142,8 @@ a {
   width: 192px;
 }
 .img-product {
-  height: 340px;
+  max-width: 100%;
+  max-height: 340px;
 }
 .product-section h3 {
   font-weight: 400;
@@ -209,10 +210,6 @@ a {
 
 /* RESPONSIVE TABLET 769 - 992 PIXEL */
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .product-section .img-product {
-    width: 312px;
-    height: auto;
-  }
 
   .instruction-section .banner {
     background-position: 25%;
@@ -236,11 +233,6 @@ a {
   .product-section .helb-go, .product-section .helb-bike {
     width: 100%;
     margin: 0;
-  }
-
-  .product-section .img-product {
-    width: 80%;
-    height: auto;
   }
 
   .instruction-section .banner{
